@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func printPrimeNumbers(num1, num2 int) {
@@ -11,14 +10,7 @@ func printPrimeNumbers(num1, num2 int) {
 		return
 	}
 	for num1 <= num2 {
-		isPrime := true
-		for i := 2; i <= int(math.Floor(float64(num1)/2)); i++ {
-			if num1%i == 0 {
-				isPrime = false
-				break
-			}
-		}
-		if isPrime {
+		if IsPrime(num1) {
 			fmt.Printf("%d ", num1)
 		}
 		num1++
