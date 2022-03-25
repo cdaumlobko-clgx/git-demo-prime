@@ -22,6 +22,4 @@ func main() {
 	printPrimeNumbers(5, 19)
 	printPrimeNumbers(0, 2)
 	printPrimeNumbers(13, 100)
-
-	fmt.Printf("factorial 7: %d\n", Fact(7))
 }
